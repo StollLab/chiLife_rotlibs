@@ -5,6 +5,7 @@ import pytest
 
 mono_rotlibs = list(Path('../MMM Rotlibs').glob('*.npz')) + list(Path('../SpinLabels').glob('*.npz'))
 av_rotlibs = list(Path('../AV Only SpinLabels').glob('*.npz')) + list(Path('../AV Only FluorLabels').glob('*.npz'))
+drotlibs = list(Path('../dSpinLabels').glob('*.zip'))
 prot = xl.fetch('1ubq')
 
 
@@ -24,6 +25,24 @@ def test_av_rotlibs(lib):
     np.random.seed(1)
 
     SL = xl.SpinLabel('TST', 28, prot, rotlib=str(lib), sample=100)
+
+    if not Path(f'test_data/{lib.stem}.npy').exists():
+        np.save(f'test_data/{lib.stem}.npy', SL.coords)
+
+    ans = np.load(f'test_data/{lib.stem}.npy')
+    np.testing.assert_almost_equal(SL.coords, ans)
+
+
+@pytest.mark.parametrize('lib', drotlibs)
+def test_drotlibs(lib):
+    if 'ip4' in str(lib):
+        site = 28, 32
+    elif 'ip2' in str(lib):
+        site = 66, 68
+
+    print(lib)
+
+    SL= xl.dSpinLabel(lib.name[:3], site, prot, rotlib=str(lib))
 
     if not Path(f'test_data/{lib.stem}.npy').exists():
         np.save(f'test_data/{lib.stem}.npy', SL.coords)
