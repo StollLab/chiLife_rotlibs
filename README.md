@@ -1,7 +1,8 @@
 
 > **NOTICE**: As of 10/25/23 the main branch of chiLife now uses a new rotamer library format that is incompatible with older versions
 > of chiLife. All rotlibs in this directory have been updated to the new format. If you are using an older version of 
-> chiLife you must check out commit ``82059f4`` or earlier for compatible rotlibs. 
+> chiLife you must check out ``chiLife_rotlibs`` commit [``82059f4``](https://github.com/StollLab/chiLife_rotlibs/tree/82059f44b319e0a6494394c52000ddf7c9d50e5b) 
+> or earlier for compatible libraries. 
 
 
 # chiLife Rotamer Libraries Repository
