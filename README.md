@@ -1,3 +1,9 @@
+
+> **NOTICE**: As of 10/25/23 the main branch of chiLife now uses a new rotamer library format that is incompatible with older versions
+> of chiLife. All rotlibs in this directory have been updated to the new format. If you are using an older version of 
+> chiLife you must check out commit ``82059f4`` or earlier for compatible rotlibs. 
+
+
 # chiLife Rotamer Libraries Repository
 
 The repo contains rotamer libraries for chiLife (https://github.com/StollLab/chilife). The purpose of this repo is to 
@@ -6,7 +12,7 @@ they are compatible with future versions of chiLife. Note that the rotamers and 
 time due to improvements in rotamer library performance, but previous versions should always be accessible through the 
 ``git`` versions.
 
-> **_NOTE:_** There may be many duplicate rotamer libraries between FluorLables and SpinLabels, specifically for metal
+> **NOTE**: There may be many duplicate rotamer libraries between FluorLables and SpinLabels, specifically for metal
 > based labels. This is due to the fact that some spin active metals can also act as FRET acceptors. Currently, these 
 > rotamer libraries are exactly the same, since there is no explicit FluorLabel object yet in chiLife. In the future 
 > they will be different to facilitate experimental differences.
