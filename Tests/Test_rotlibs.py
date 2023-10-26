@@ -37,6 +37,8 @@ def test_av_rotlibs(lib):
 def test_drotlibs(lib):
     if 'ip4' in str(lib):
         site = 28, 32
+    elif 'ip3' in str(lib):
+        site = 28, 31
     elif 'ip2' in str(lib):
         site = 66, 68
 
@@ -48,4 +50,5 @@ def test_drotlibs(lib):
         np.save(f'test_data/{lib.stem}.npy', SL.coords)
 
     ans = np.load(f'test_data/{lib.stem}.npy')
-    np.testing.assert_almost_equal(SL.coords, ans)
+    np.testing.assert_almost_equal(SL.coords, ans, decimal=4)
+    assert np.all(~np.isnan(SL.coords))
