@@ -7,3 +7,11 @@ import chilife as xl
 SL1 = xl.SpinLabel('XYZ', resi, protein, sample=10000)
 SL2 = xl.SpinLabel.from_wizard('XYZ', resi, protein)
 ```
+
+
+## rotamer library descriptions
+CYM      : None  
+FPB      : None  
+FPM      : None  
+GTN      : Gd-sTPACTCN spin label  
+PHM      : None  
