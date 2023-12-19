@@ -10,8 +10,8 @@ SL2 = xl.SpinLabel.from_wizard('XYZ', resi, protein)
 
 
 ## rotamer library descriptions
-CYM      : None  
-FPB      : None  
-FPM      : None  
+CYM      : Cu(II) Cyclen Maleimide  
+FPB      : Fe(II) phenanthroline maleimide label capped with two bipyridyl molecules  
+FPM      : Fe(II) phenanthroline maleimide label capped with two additional phenanthroline molecules  
 GTN      : Gd-sTPACTCN spin label  
-PHM      : None  
+PHM      : Cu(II) phenanthroline maleimide label with no cap  

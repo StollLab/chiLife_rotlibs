@@ -10,10 +10,10 @@ SL2 = xl.SpinLabel.from_wizard('XYZ', resi, protein)
 
 
 ## rotamer library descriptions
-ACD      : None  
-CYM      : None  
-DAB      : None  
-FPB      : None  
-FPM      : None  
-PHM      : None  
-PHM      : None  
+ACD      : L-Acridonylalanine non-canonical amino acid (Fluor)  
+CYM      : Cu(II) Cyclen Maleimide  
+DAB      : Dabcyl C2 maleimide (dabcylM) organic fluor quencher  
+FPB      : Fe(II) phenanthroline maleimide label capped with two bipyridyl molecules  
+FPM      : Fe(II) phenanthroline maleimide label capped with two additional phenanthroline molecules  
+PHM      : Cu(II) phenanthroline maleimide label with no cap  
+PHM      : Fe(II) phenanthroline maleimide label with no cap  
