@@ -1,1 +1,5 @@
 raw_files/
+raw_nafiles/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
