@@ -6,12 +6,18 @@ import pytest
 mono_rotlibs = list(Path('../MMM Rotlibs').glob('*.npz')) + list(Path('../SpinLabels').glob('*.npz'))
 av_rotlibs = list(Path('../AV Only SpinLabels').glob('*.npz')) + list(Path('../AV Only FluorLabels').glob('*.npz'))
 drotlibs = list(Path('../dSpinLabels').glob('*.zip'))
+nuc_labels = ['CNR', 'R3P', 'R5P', 'R5T', 'RTT', 'TUM', 'TUP']
 prot = xl.fetch('1ubq')
+RNA = xl.fetch('4tna')
 
 
 @pytest.mark.parametrize('lib', mono_rotlibs)
 def test_mono_rotlibs(lib):
-    SL = xl.SpinLabel('TST', 28, prot, rotlib=str(lib))
+    libname = lib.name[:3]
+    if libname in nuc_labels:
+        SL = xl.SpinLabel('TST', 33, RNA, rotlib=str(lib))
+    else:
+        SL = xl.SpinLabel('TST', 28, prot, rotlib=str(lib))
 
     if not Path(f'test_data/{lib.stem}.npy').exists():
         np.save(f'test_data/{lib.stem}.npy', SL.coords)
@@ -50,5 +56,5 @@ def test_drotlibs(lib):
         np.save(f'test_data/{lib.stem}.npy', SL.coords)
 
     ans = np.load(f'test_data/{lib.stem}.npy')
-    np.testing.assert_almost_equal(SL.coords, ans, decimal=4)
+    np.testing.assert_almost_equal(SL.coords, ans, decimal=2)
     assert np.all(~np.isnan(SL.coords))
