@@ -15,3 +15,4 @@ FPB      : Fe(II) phenanthroline maleimide label capped with two bipyridyl molec
 FPM      : Fe(II) phenanthroline maleimide label capped with two additional phenanthroline molecules  
 GTN      : Gd-sTPACTCN spin label  
 PHM      : Cu(II) phenanthroline maleimide label with no cap  
+R1p      : None  

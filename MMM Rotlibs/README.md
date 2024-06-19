@@ -1,4 +1,5 @@
 ## rotamer library descriptions
+CNR      : CNR library from MMM 2021  
 DZD      : DZD library from MMM 2021  
 GDI      : GDI library from MMM 2021  
 GDM      : GDM library from MMM 2021  
@@ -11,6 +12,12 @@ MA1      : MA1 library from MMM 2021
 Nc1      : Nc1 library from MMM 2021  
 Nx1      : Nx1 library from MMM 2021  
 R1A      : R1A library from MMM 2021  
+R3P      : R3P library from MMM 2021  
+R5P      : R5P library from MMM 2021  
+R5T      : R5T library from MMM 2021  
 R7A      : R7A library from MMM 2021  
+RTT      : RTT library from MMM 2021  
 RUA      : RUA library from MMM 2021  
+TUM      : TUM library from MMM 2021  
+TUP      : TUP library from MMM 2021  
 V1A      : V1A library from MMM 2021  
