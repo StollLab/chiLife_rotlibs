@@ -1,4 +1,8 @@
 
+
+> [!NOTE]
+> As of 2/06/25 chiLife has updated the rotlib format to version 1.5. If you want to update your rotlibs use the update_rotlib.py scrip in the chiLife repository. If you wish to use version 1.4 rotamer libraries (compatible with chilife 1.0.x) you must check out ``chiLife_rotlibs`` commit [``6d57d69``](https://github.com/StollLab/chiLife_rotlibs/commit/6d57d69bc76867099f98409e7487d8371cf504c9). See note below for earlier versions.
+
 > [!NOTE]
 > As of 6/12/24 chiLife has updated the rotlib format to version 1.4. If you want to update your rotlibs use the update_rotlib.py scrip in the chiLife repository. If you wish to use version 1.3 rotamer libraries (compatible with chilife 0.2-0.3) you must check out ``chiLife_rotlibs`` commit [``538782e``](https://github.com/StollLab/chiLife_rotlibs/commit/538782e00484546026cfe2937de943560c1b8670). See note below for earlier versions. 
 
